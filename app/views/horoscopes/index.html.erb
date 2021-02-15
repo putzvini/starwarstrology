@@ -1,0 +1,6 @@
+<h1>Horoscopes</h1>
+<ul>
+  <% @horoscopes.each do |horoscope| %>
+  <li><%= horoscope.short_name %></li>
+  <% end %>
+</ul>

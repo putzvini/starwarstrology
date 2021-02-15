@@ -14,17 +14,18 @@ characters = [
   ['luke_skywalker', 'luke', 'luke skywalker', '#DB675E'],
   ['han_solo', 'han', 'han solo', '#84693B'],
   ['chewbacca', 'chewie', 'chewbacca', '#985E71'],
-  ['c_3po', 'c-3po', 'c-3po', '##ED860B'],
+  ['c_3po', 'c-3po', 'c-3po', '#ED860B'],
   ['obi_wan_kenobi', 'obi', 'obi wan knobi', '#594C69']
 ]
 
 puts 'creating characters'
 
-characters.each do |c|
-  Horocope.create(
+characters.each_with_index do |c, i|
+  Horoscope.create!(
     name: c[0],
     short_name: c[1],
     full_name: c[2],
     color: c[3]
   )
+  puts "character #{i+1} created"
 end
