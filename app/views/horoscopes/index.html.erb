@@ -5,3 +5,8 @@
   <%= link_to image_tag( "profile/#{horoscope.short_name}.png"), horoscope_path(horoscope) %>
   <% end %>
 </ul>
+<ul>
+  <% @cards.each_with_index do |card| %>
+  <li><%= image_tag "cards/#{card}.png" %></li>
+  <% end %>
+</ul>

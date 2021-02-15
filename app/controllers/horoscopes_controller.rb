@@ -1,6 +1,7 @@
 class HoroscopesController < ApplicationController
   def index
     @horoscopes = Horoscope.all
+    @cards = (0..21).to_a.shuffle.take(3)
   end
   
   def show
