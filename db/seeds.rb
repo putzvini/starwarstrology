@@ -10,12 +10,12 @@
 characters = [
   ['darth_vader', 'vader', 'darth vader', '#B9534B'],
   ['yoda', 'yoda', 'master yoda', '#A3D775'],
-  ['leia_morgana', 'leia', 'princess leia', '#B08F7A'],
+  ['leia_organa', 'leia', 'princess leia', '#B08F7A'],
   ['luke_skywalker', 'luke', 'luke skywalker', '#DB675E'],
   ['han_solo', 'han', 'han solo', '#84693B'],
   ['chewbacca', 'chewie', 'chewbacca', '#985E71'],
-  ['c-3po', 'c-3po', 'c-3po', '##ED860B'],
-  ['obi_wan', 'obi', 'obi wan knobi', '#594C69']
+  ['c_3po', 'c-3po', 'c-3po', '##ED860B'],
+  ['obi_wan_kenobi', 'obi', 'obi wan knobi', '#594C69']
 ]
 
 puts 'creating characters'
