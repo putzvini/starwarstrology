@@ -1,0 +1,15 @@
+.tarot-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  height: 250px;
+}
+// .tarot-cards-container {
+//   position: relative;
+//   width: 700px;
+//   height: 433px;
+// }

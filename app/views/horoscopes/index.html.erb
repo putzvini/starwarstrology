@@ -1,12 +1,43 @@
-<h1>Horoscopes</h1>
-<ul>
-  <% @horoscopes.each do |horoscope| %>
-  <li><%= horoscope.short_name %></li>
-  <%= link_to image_tag( "profile/#{horoscope.short_name}.png"), horoscope_path(horoscope) %>
-  <% end %>
-</ul>
-<ul>
-  <% @cards.each_with_index do |card| %>
-  <li><%= image_tag "cards/#{card}.png" %></li>
-  <% end %>
-</ul>
+<div class="banner-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(http://thedailycougar.com/wp-content/uploads/2020/09/PRINT_LifeArts_Astrology-Explainer_JuanaGarcia-01.png)">
+  <h1>STARWARSTROLOGY</h1>
+  <p>Horoscope and tarot brought to you from people who actually know the stars</p>
+</div>
+<div class="main-container">
+  <div>
+  </div>
+  <div>
+    <h2>Tarot</h2>
+    <div class="tarot-cards-container">
+      
+      <%= image_tag "cards/love.png" , class:"card"%>
+      <%= image_tag "cards/carrer.png" , class:"card"%>
+      <%= image_tag "cards/mood.png" , class:"card"%>
+      
+    </div>
+  
+  </div>
+  
+  <div class="container">    
+    <div class="row">     
+      <div class="col">       
+        <div class="wrapper">            
+            <div class="gallery">
+              <ul>
+                <% @horoscopes.each do |horoscope| %>
+                <li><%= link_to image_tag( "profile_square/#{horoscope.short_name}.png"), horoscope_path(horoscope) %></li>
+                <% end %>
+              </ul>
+            </div>        
+        </div>
+      </div>  
+      <div class="col">
+        <div class="wrapper">
+          <h3>Daily horoscope</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div>
+
+
