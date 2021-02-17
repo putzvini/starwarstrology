@@ -15,7 +15,8 @@ characters = [
   ['han_solo', 'han', 'han solo', '#84693B'],
   ['chewbacca', 'chewie', 'chewbacca', '#985E71'],
   ['c_3po', 'c-3po', 'c-3po', '#ED860B'],
-  ['obi_wan_kenobi', 'obi', 'obi wan knobi', '#594C69']
+  ['obi_wan_kenobi', 'obi', 'obi wan knobi', '#594C69'],
+  ['jabba', 'jabba', 'jabba the hutt', "#FFE699"]
 ]
 
 puts 'creating characters'
