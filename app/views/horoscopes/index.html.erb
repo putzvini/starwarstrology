@@ -1,39 +1,53 @@
-<div class="banner-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(http://thedailycougar.com/wp-content/uploads/2020/09/PRINT_LifeArts_Astrology-Explainer_JuanaGarcia-01.png)">
-  <h1>STARWARSTROLOGY</h1>
-  <p>Horoscope and tarot brought to you from people who actually know the stars</p>
-</div>
 <div class="main-container">
-  <div>
+  
+  <div class="row">
+    <div class="col"></div>
+    <div  class="col-8">
+      <h3>Tarot</h3>
+    </div>
+    <div class="col"></div>  
   </div>
-  <div>
-    <h2>Tarot</h2>
-    <div class="tarot-cards-container">
+  
+  <div class="row">
+    <div class="col"></div>
+    <div  class="col-6">  
       
-      <%= image_tag "cards/love.png" , class:"card"%>
-      <%= image_tag "cards/carrer.png" , class:"card"%>
-      <%= image_tag "cards/mood.png" , class:"card"%>
+      <div class="tarot-cards-container">
       
+        <%= image_tag "cards/love.png" , class:"card"%>
+        <%= image_tag "cards/carrer.png" , class:"card"%>
+        <%= image_tag "cards/mood.png" , class:"card"%>
+      
+      </div>
+    
     </div>
   
+    <div class="col"></div>
   </div>
-  
+
   <div class="container">    
     <div class="row">     
       <div class="col">       
         <div class="wrapper">            
-            <div class="gallery">
-              <ul>
-                <% @horoscopes.each do |horoscope| %>
-                <li><%= link_to image_tag( "profile_square/#{horoscope.short_name}.png"), horoscope_path(horoscope) %></li>
-                <% end %>
-              </ul>
-            </div>        
+          <div class="gallery">
+            <ul>
+              <% @horoscopes.each do |horoscope| %>
+              <li><%= link_to image_tag( "profile_square/#{horoscope.short_name}.png"), horoscope_path(horoscope) %></li>
+              <% end %>
+            </ul>
+          </div>        
         </div>
       </div>  
       <div class="col">
         <div class="wrapper">
           <h3>Daily horoscope</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+          <p class="text-justify">
+            A long long time ago in a galaxy far far away, a great group of warriors got together 
+            to break down myths and bring to you the real facts about the zodiac. Although
+            you may know them for other initiatives, even as enemies in occasions, let it be know that no one in 
+            any galaxy knows the star's secrets better that them. Their union represent the ultimate
+            alliance in astrology. <strong>Click on an image and see what the stars have to say.</strong>
+          </p>
         </div>
       </div>
     </div>
