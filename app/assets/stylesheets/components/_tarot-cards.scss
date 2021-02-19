@@ -1,8 +1,25 @@
+.tarot-container {
+  background-color: #FFE3BE;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h3 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
 .tarot-cards-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .card {

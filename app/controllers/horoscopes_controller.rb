@@ -6,6 +6,7 @@ class HoroscopesController < ApplicationController
   
   def show
     @horoscope = Horoscope.find(params[:id])
+    @trooper_card = (1..3).to_a.shuffle.first
 
     @quotes = []
     unless @horoscope.id == 6

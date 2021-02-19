@@ -1,0 +1,23 @@
+.about-container {
+  background-color: #C1615E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h3 {
+    color:#ECF1EE;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    color:#ECF1EE;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1rem;
+  }
+}

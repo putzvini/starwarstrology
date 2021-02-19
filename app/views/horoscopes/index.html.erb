@@ -1,34 +1,35 @@
 <div class="main-container">
-  
-  <div class="row">
-    <div class="col"></div>
-    <div  class="col-8">
-      <h3>Daily Tarot Reading</h3>
-      <p>Discover your free daily tarot card reading and take a glimpse into the future</p>
+  <div class=tarot-container>
+    <div class="row">
+      <div class="col-3"></div>
+      <div  class="col-6">
+        <h3>Daily Tarot Reading</h3>
+        <p>Checkout our free daily tarot card reading and take a glimpse into the future</p>
+      </div>
+      <div class="col-3"></div>  
     </div>
-    <div class="col"></div>  
-  </div>
-  
-  <div class="row">
-    <div class="col"></div>
-    <div  class="col-6">  
-      
-      <div class="tarot-cards-container">
-      
-        <%= image_tag "cards/love.png" , class:"card"%>
-        <%= image_tag "cards/carrer.png" , class:"card"%>
-        <%= image_tag "cards/mood.png" , class:"card"%>
+    
+    <div class="row">
+      <div class="col"></div>
+      <div  class="col-6">  
+        
+        <div class="tarot-cards-container">
+        
+          <%= image_tag "cards/love.png" , class:"card"%>
+          <%= image_tag "cards/carrer.png" , class:"card"%>
+          <%= image_tag "cards/mood.png" , class:"card"%>
+        
+        </div>
       
       </div>
     
+      <div class="col"></div>
     </div>
-  
-    <div class="col"></div>
   </div>
-
-  <div class="container">
-    <div class="row">     
-      <div class="col">       
+  <div class="horoscope-container">
+    <div class="row">
+      <div class="col-1"></div>     
+      <div class="col-5">       
         <div class="wrapper">            
           <div class="gallery">
             <ul>
@@ -39,7 +40,7 @@
           </div>        
         </div>
       </div>  
-      <div class="col">
+      <div class="col-4">
         <div class="wrapper">
           <h3>Daily horoscope</h3>
           <p class="text-justify">
@@ -50,7 +51,37 @@
             alliance in astrology. <strong>Click on an image</strong> and see what the stars have to say for your day.
           </p>
         </div>
+        <div class="col-2"></div>
       </div>
+    </div>
+  </div>
+  <div class="about-container">
+    <div class="row">
+      <%= image_tag "author-small.jpg", class:"avatar"%>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>About the author</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <p>
+          StarWarstrology is a personal project i've developed in order to improve my skills as a developer. It comes from 
+          a long time desire to put together astrology and Star Wars, two subjects so drifted apart from each but, at the same
+          time, united by commom grounds: the stars.
+        </p>
+        <p>
+          This is a non-profit website, made with <strong>free</strong> materials i've gathered online. If this website by any means
+          makes you fell unconfortable or is breaking any copyright laws, please feel free to contact me at any time by any mean
+          provided below.
+        </p>
+        <p>
+          Thanks  
+        </p>
+      </div>
+      <div class="3"></div>
     </div>
   </div>
 <div>

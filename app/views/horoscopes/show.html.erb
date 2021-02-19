@@ -1,67 +1,67 @@
-<div class="row">
-  <div class="col-1"></div>
-  <div  class="col-8">
-    <h1 class="h1-character"><%= @horoscope.full_name.titleize %></h1>
+<div class="horoscope-container">
+  <div class="row">
+    <div class="col-2"></div>
+    <div  class="col-8">
+      <h1 class="h1-character"><%= @horoscope.full_name.titleize %></h1>
+    </div>
+    <div class="col-2"></div>  
   </div>
-  <div class="col-3"></div>  
+  <div class="daily-horoscope-container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-4">
+        <div class="row">
+          <div class="col-2">
+            <%= image_tag "horoscope-icons/1.png", class:"horoscope-icon" %>
+          </div>
+          <div class="col-10">
+            <h3>Love</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>  
+          <div class="col-10">  
+            <p><%= @quotes[0]%></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <%= image_tag "horoscope-icons/2.png", class:"horoscope-icon" %>
+          </div>
+          <div class="col-10">
+            <h3>Carrer</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>  
+          <div class="col-10">  
+            <p><%= @quotes[1]%></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <%= image_tag "horoscope-icons/3.png", class:"horoscope-icon" %>
+          </div>
+          <div class="col-10">
+            <h3>Mood</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>  
+          <div class="col-10">  
+            <p><%= @quotes[2]%></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <%= image_tag "trooper-cards/trooper-#{@trooper_card}.png", class:"horoscope-card" %>
+      </div>
+      <div class="col-1"></div>
+
+
+    </div>
+  </div>  
 </div>
-<div class="row">
-  <div class="col-1"></div>
-  <div class="col-4">
-    <div class="row">
-      <div class="col-2">
-        <%= image_tag "horoscope-icons/1.png", class:"horoscope-icon" %>
-      </div>
-      <div class="col-10">
-        <h3>Love</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2"></div>  
-      <div class="col-10">  
-        <p><%= @quotes[0]%></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <%= image_tag "horoscope-icons/2.png", class:"horoscope-icon" %>
-      </div>
-      <div class="col-10">
-        <h3>Carrer</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2"></div>  
-      <div class="col-10">  
-        <p><%= @quotes[1]%></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2">
-        <%= image_tag "horoscope-icons/3.png", class:"horoscope-icon" %>
-      </div>
-      <div class="col-10">
-        <h3>Mood</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-2"></div>  
-      <div class="col-10">  
-        <p><%= @quotes[2]%></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-1"></div>
-  <div class="col-2">
-    <%= image_tag "horoscope/trooper-1.png", class:"horoscope-card" %>
-  </div>
-  <div class="col-2">
-    <%= image_tag "horoscope/trooper-2.png", class:"horoscope-card" %>
-  </div>
-  <div class="col-2">
-    <%= image_tag "horoscope/trooper-3.png", class:"horoscope-card" %>
-  </div>
-</div>    
   
   
 
